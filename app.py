@@ -109,24 +109,22 @@ with st.container():
     with right_column:
         
         st.write('_For more accurate prediction :_')
-        if st.button('Predict with Logistic Regression'):
+        if st.button('Predict with LR model'):
             pp = loaded_model_LR.predict(sample)
             if pp == 1:
                 st.write("Congratulation..!! Your Loan has been acceptd")
                 st.balloons()
-                st.snow()
             else:
                 st.write("Sorry..!! Your Loan has been refused")
 
     with left_column:
 
         st.write('_For accurate prediction :_')
-        if st.button('Predict with Random Forest'):
+        if st.button('Predict with RF model'):
             pp2 = loaded_model_RF.predict(sample)
             if pp2 == 1:
-                st.write("Congratulation..!! Your Loan has been acceptd")
+                st.success("Congratulation..!! Your Loan has been acceptd")
                 st.balloons()
-                st.snow()
             else:
                 st.write("Sorry..!! Your Loan has been refused")
                 
@@ -148,6 +146,8 @@ with st.container():
 
 
 footer="""<style>
+header {visibility: hidden;}
+
 /* Light mode styles */
 p {
   color: black;
