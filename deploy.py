@@ -153,10 +153,22 @@ with st.container():
 
 
 footer="""<style>
+/* Light mode styles */
+p {
+  color: black;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  p {
+    color: white;
+  }
+}
+
 a:link , a:visited{
 color: blue;
 background-color: transparent;
-text-decoration: underline;
+text-decoration: none;
 }
 
 a:hover,  a:active {
@@ -165,18 +177,35 @@ background-color: transparent;
 text-decoration: underline;
 }
 
+:root {
+  --footer-bg-color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --footer-bg-color: rgb(14, 17, 23);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --footer-bg-color: white;
+  }
+}
+
 .footer {
 position: fixed;
 left: 0;
 bottom: 0;
 width: 100%;
-background-color: white;
+background-color: var(--footer-bg-color);
 color: black;
 text-align: center;
 }
+
 </style>
 <div class="footer">
-<p>Developed with 💙 by <a style='display: block; text-align: center;' href="https://www.linkedin.com/in/ali-abdallah7/" target="_blank">Ali Abdallah</a></p>
+<p>©Developed and maintained by <a href="https://www.linkedin.com/in/ali-abdallah7/"> Ali Abdallah</a></p>
 </div>
 """
 st.markdown(footer,unsafe_allow_html=True)
