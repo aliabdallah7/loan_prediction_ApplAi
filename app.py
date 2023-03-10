@@ -73,19 +73,14 @@ st.title('Loan Prediction System')
 animation_header = load_lottie("https://assets6.lottiefiles.com/packages/lf20_azmc2roh.json")
 animation_header2 = load_lottie("https://assets4.lottiefiles.com/packages/lf20_1wnliqn0.json")
 
-with st.container():
-    right_column, left_column = st.columns(2)
-    with right_column:
-        st_lottie(animation_header2, speed=1, height=200, key="forth")
+st_lottie(animation_header2, speed=1, height=150, key="forth")
 
-    with left_column:
-        st_lottie(animation_header, speed=1, height=200, key="initial")
 
 lottie_link = "https://assets8.lottiefiles.com/packages/lf20_4wDd2K.json"
 animation = load_lottie(lottie_link)
 animation_contact = load_lottie("https://assets4.lottiefiles.com/packages/lf20_mwawjro9.json")
 st.write('---')
-st.subheader('Please, enter your information to predict your loan statues:')
+st.subheader('Please, enter your information to predict your loan status :')
 with st.container():
     right_column, left_column = st.columns(2)
     with right_column:
@@ -166,7 +161,7 @@ p {
 }
 
 a:link , a:visited{
-color: blue;
+color: #5C5CFF;
 background-color: transparent;
 text-decoration: none;
 }
@@ -205,7 +200,7 @@ text-align: center;
 
 </style>
 <div class="footer">
-<p>©Developed and maintained by <a href="https://www.linkedin.com/in/ali-abdallah7/"> Ali Abdallah</a></p>
+<p>©Developed by <a href="https://www.linkedin.com/in/ali-abdallah7/"> Ali Abdallah</a></p>
 </div>
 """
 st.markdown(footer,unsafe_allow_html=True)
