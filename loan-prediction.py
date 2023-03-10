@@ -146,7 +146,7 @@ with st.container():
 
 
 footer="""<style>
-
+header {visibility: hidden;}
 
 /* Light mode styles */
 p {
