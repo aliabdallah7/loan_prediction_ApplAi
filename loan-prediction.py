@@ -112,7 +112,7 @@ with st.container():
         if st.button('Predict with LR model'):
             pp = loaded_model_LR.predict(sample)
             if pp == 1:
-                st.write("Congratulation..!! Your Loan has been acceptd")
+                st.success("Congratulation..!! Your Loan has been acceptd")
                 st.balloons()
             else:
                 st.write("Sorry..!! Your Loan has been refused")
@@ -146,7 +146,7 @@ with st.container():
 
 
 footer="""<style>
-header {visibility: hidden;}
+
 
 /* Light mode styles */
 p {
