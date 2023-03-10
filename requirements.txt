@@ -3,7 +3,7 @@ Pillow
 streamlit
 streamlit_lottie
 sklearn
-matplotlib.pyplot
+matplotlib
 seaborn
 numpy
 pandas
