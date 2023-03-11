@@ -7,4 +7,4 @@ I used :
 - ✅ ID3
 - ✅ Random Forrest
 
-#### You can try using it now from here: [Loan Prediction App](https://aliabdallah7-loan-prediction-applai-loan-prediction-c5af4u.streamlit.app/)
+#### You can try using it now from here: https://loanprediction.streamlit.app/
