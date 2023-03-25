@@ -200,7 +200,7 @@ text-align: center;
 
 </style>
 <div class="footer">
-<p>&copy; Developed by <a href="https://www.linkedin.com/in/ali-abdallah7/"> Ali Abdallah</a></p>
+<p>&copy; 2023 <a href="https://www.linkedin.com/in/ali-abdallah7/"> Ali Abdallah</a></p>
 </div>
 """
 st.markdown(footer,unsafe_allow_html=True)
