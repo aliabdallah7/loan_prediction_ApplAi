@@ -10,4 +10,7 @@ I used :
 - ✅ ID3
 - ✅ Random Forrest
 
-#### You can try using it now from here: https://loanprediction.streamlit.app/
+### You can try using it now from here: https://loanprediction.streamlit.app/
+
+## 📜 LICENSE
+[MIT](https://github.com/aliabdallah7/loan_prediction_ApplAi/blob/main/LICENSE)
