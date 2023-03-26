@@ -11,3 +11,4 @@ pandas==1.5.3
 pickleshare==0.7.5
 matplotlib==3.6.3
 matplotlib-inline==0.1.6
+sklearn==0.0.post1
