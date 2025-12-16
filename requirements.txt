@@ -1,11 +1,11 @@
 streamlit
 numpy
 pandas
-scikit-learn
+scikit-learn==1.0.2
 scipy
 matplotlib
 seaborn
-joblib
+joblib==1.2.0
 Pillow
 requests
 streamlit-lottie
